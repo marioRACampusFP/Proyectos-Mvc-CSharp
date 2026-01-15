@@ -1,4 +1,4 @@
-﻿namespace BookRazor.Models
+namespace CatalogoProductosMvc.Models
 {
     public class ErrorViewModel
     {
