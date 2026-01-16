@@ -1,0 +1,33 @@
+﻿@model IEnumerable<BookRazor.Models.Libro>
+@{
+    //Título de la página que se mostrará en el navegador
+    ViewBag.Title = "Catálogo";
+}
+
+<!-- Encabezado principal del catálogo -->
+<h2 class="mb-4 fw-bold text-center">Nuestro Catálogo</h2>
+
+<!-- Contenedor con tarjetas responsivas (Bootstrap) para mostrar los libros -->
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var libro in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <!-- Título del libro -->
+                    <h5 class="card-title fw-bold">@libro.Titulo</h5>
+
+                    <!-- Autor y género -->
+                    <p class="card-text text-muted mb-1">@libro.Autor</p>
+                    <p class="text-secondary">@libro.Genero</p>
+
+                    <!-- Precio con formato de moneda -->
+                    <h6 class="fw-bold text-primary">@libro.Precio.ToString("C")</h6>
+
+                    <!-- Botón que lleva a la vista de detalles del libro -->
+                    <a href="/Catalogo/Detalle/@libro.Id" class="btn btn-primary mt-3">Ver detalle</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

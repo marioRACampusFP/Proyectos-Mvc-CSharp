@@ -1,0 +1,26 @@
+﻿@model BookRazor.Models.Libro
+@{
+    //Título de la página que se mostrará en el navegador
+    ViewBag.Title = "Detalle";
+}
+
+<!--Tarjeta que muestra la información completa de un libro -->
+<div class="card mx-auto mt-5" style="max-width: 600px;">
+    <div class="card-body">
+        <!-- Título del libro -->
+        <h3 class="fw-bold">@Model.Titulo</h3>
+
+        <!-- Datos principales del libro -->
+        <p><strong>Autor:</strong> @Model.Autor</p>
+        <p><strong>Género:</strong> @Model.Genero</p>
+        <p><strong>Precio:</strong> @Model.Precio.ToString("C")</p>
+
+        <hr />
+
+        <!-- Descripción generada por el método ObtenerDescripcion() -->
+        <p>@ViewBag.Descripcion</p>
+
+        <!-- Enlace para volver al catálogo -->
+        <a href="/Catalogo" class="btn btn-outline-secondary mt-3">Volver al catálogo</a>
+    </div>
+</div>

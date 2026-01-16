@@ -1,0 +1,30 @@
+﻿@model IEnumerable<BookRazor.Models.Libro>
+@{
+    //Título de la página que se mostrará en el navegador
+    ViewBag.Title = "Recomendaciones";
+}
+
+<!-- Encabezado principal de la sección de recomendaciones -->
+<h2 class="text-center mb-4 fw-bold">Recomendaciones para ti</h2>
+
+<!-- Contenedor con tarjetas responsivas (Bootstrap) para mostrar los libros recomendados -->
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var libro in Model)
+    {
+        <div class="col">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                    <!-- Título del libro recomendado -->
+                    <h5 class="card-title fw-bold">@libro.Titulo</h5>
+
+                    <!-- Autor y género -->
+                    <p class="text-muted mb-1">@libro.Autor</p>
+                    <p class="text-secondary">@libro.Genero</p>
+
+                    <!-- Botón pequeño que lleva a la vista de detalles del libro -->
+                    <a href="/Catalogo/Detalle/@libro.Id" class="btn btn-primary btn-sm mt-2">Ver detalle</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

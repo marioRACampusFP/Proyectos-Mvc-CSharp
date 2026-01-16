@@ -1,0 +1,20 @@
+﻿@{
+    //Título de la página que se mostrará en el navegador
+    ViewBag.Title = "Inicio";
+}
+
+<!-- Contenedor principal con mensaje de bienvenida -->
+<div class="text-center my-5">
+    <!-- Título del sitio y lema obtenidos desde appsettings.json -->
+    <h1 class="display-5 fw-bold text-dark">@ViewBag.Title</h1>
+    <p class="lead text-secondary mb-4">@ViewBag.Tagline</p>
+
+    <!-- Botones para navegar al catálogo y a las recomendaciones -->
+    <a href="/Catalogo" class="btn btn-primary btn-lg me-2">Explorar Catálogo</a>
+    <a href="/Catalogo/Recomendaciones" class="btn btn-outline-secondary btn-lg">Ver Recomendaciones</a>
+</div>
+
+<!-- Imagen decorativa para la página de inicio -->
+<div class="text-center mt-5">
+    <img src="https://cdn-icons-png.flaticon.com/512/2983/2983792.png" width="150" alt="Libros" />
+</div>
