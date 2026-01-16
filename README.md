@@ -1,2 +1,2 @@
-Proyectos Mvc-Csharp
-Repositorio para mis ejercicios y proyectos de Mvc-Csharp en el ciclo.
+MVC-CSharp Projects
+Repository for my MVC-CSharp exercises and projects in the cycle.
