@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using CatalogoProductosMvc.Models;
+using EcoTrails.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CatalogoProductosMvc.Controllers
+namespace EcoTrails.Controllers
 {
     public class HomeController : Controller
     {

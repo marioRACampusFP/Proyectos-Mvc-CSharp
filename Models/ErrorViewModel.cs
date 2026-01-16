@@ -1,4 +1,4 @@
-namespace CatalogoProductosMvc.Models
+namespace EcoTrails.Models
 {
     public class ErrorViewModel
     {
