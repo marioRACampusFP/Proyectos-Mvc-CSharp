@@ -1,33 +1,32 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using BookRazor.Models;
+using System.Diagnostics;
+using CatalogoProductosMvc.Models;
+using Microsoft.AspNetCore.Mvc;
 
-namespace BookRazor.Controllers
+namespace CatalogoProductosMvc.Controllers
 {
     public class HomeController : Controller
     {
-        //Inyección de dependencias para acceder a la información del sitio desde appsettings.json
-        private readonly IOptions<SiteInfo> _siteInfo;
+        private readonly ILogger<HomeController> _logger;
 
-        //Constructor que recibe los datos de configuración (título y lema del sitio)
-        public HomeController(IOptions<SiteInfo> siteInfo)
+        public HomeController(ILogger<HomeController> logger)
         {
-            _siteInfo = siteInfo;
+            _logger = logger;
         }
 
-        //Acción principal que muestra la página de inicio
-        //Usa los valores de configuración para mostrar el título y el lema del sitio en la vista
         public IActionResult Index()
         {
-            ViewBag.Title = _siteInfo.Value.Title;
-            ViewBag.Tagline = _siteInfo.Value.Tagline;
             return View();
         }
 
-        //Acción que muestra la vista de error si ocurre algún problema
-        public IActionResult Error()
+        public IActionResult Privacy()
         {
             return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
