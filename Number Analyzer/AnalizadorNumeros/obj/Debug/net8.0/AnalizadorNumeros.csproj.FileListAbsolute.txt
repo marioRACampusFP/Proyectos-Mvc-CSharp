@@ -1,0 +1,14 @@
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\bin\Debug\net8.0\AnalizadorNumeros.exe
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\bin\Debug\net8.0\AnalizadorNumeros.deps.json
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\bin\Debug\net8.0\AnalizadorNumeros.runtimeconfig.json
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\bin\Debug\net8.0\AnalizadorNumeros.dll
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\bin\Debug\net8.0\AnalizadorNumeros.pdb
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\obj\Debug\net8.0\AnalizadorNumeros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\obj\Debug\net8.0\AnalizadorNumeros.AssemblyInfoInputs.cache
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\obj\Debug\net8.0\AnalizadorNumeros.AssemblyInfo.cs
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\obj\Debug\net8.0\AnalizadorNumeros.csproj.CoreCompileInputs.cache
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\obj\Debug\net8.0\AnalizadorNumeros.dll
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\obj\Debug\net8.0\refint\AnalizadorNumeros.dll
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\obj\Debug\net8.0\AnalizadorNumeros.pdb
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\obj\Debug\net8.0\AnalizadorNumeros.genruntimeconfig.cache
+C:\Users\CampusFP\Desktop\Optativa\AnalizadorNumeros\AnalizadorNumeros\obj\Debug\net8.0\ref\AnalizadorNumeros.dll
